@@ -3,3 +3,7 @@
 /PromptSwitch
 /figs
 /tvr/models/ViT-B-*.pt
+a.py
+draw.ipynb
+query_vis.py
+query_vis.sh
