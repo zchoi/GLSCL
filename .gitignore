@@ -1,0 +1,5 @@
+/data
+/ckpt
+/PromptSwitch
+/figs
+/tvr/models/ViT-B-*.pt

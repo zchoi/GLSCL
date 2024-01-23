@@ -1,0 +1,32 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
+python -m torch.distributed.launch \
+--master_port 2502 \
+--nproc_per_node=8 \
+main_retrieval.py \
+--do_train 1 \
+--workers 8 \
+--n_display 10 \
+--epochs 10 \
+--lr 1e-4 \
+--coef_lr 1e-3 \
+--batch_size 64 \
+--batch_size_val 64 \
+--anno_path /mnt/nfs/CMG/zhanghaonan/datasets/activitynet/anns \
+--video_path /mnt/nfs/CMG/zhanghaonan/datasets/activitynet/Videos/Activity_Videos \
+--datatype activity \
+--max_words 64 \
+--max_frames 64 \
+--video_framerate 1 \
+--output_dir ckpt/activitynet/main_exp/v2 \
+--center 1 \
+--temp 3 \
+--alpha 0.0001 \
+--beta 0.005 \
+--t2v_beta 50 \
+--v2t_beta 50 \
+--query_number 12 \
+--base_encoder ViT-B/32 \
+--cross_att_layer 3 \
+--query_share 1 \
+--cross_att_share 1 \
+--loss2_weight 0.5 \
