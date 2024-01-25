@@ -5,7 +5,7 @@ Text-Video Retrieval with Global-Local Semantic Consistent Learning
 </b>
 </h1>
 <h4>
-<a href="https://github.com/zchoi">Haonan Zhang</a>, <a href="https://ppengzeng.github.io/">Pengpeng Zeng</a>, <a href="https://lianligao.github.io/">Lianli Gao</a>, <a href="https://cfm.uestc.edu.cn/~songjingkuan/">Jingkuan Song</a>, Yihang Duan, <a href="https://scholar.google.com/citations?hl=zh-CN&user=kVcO9R4AAAAJ&view_op=list_works&sortby=pubdate">Xinyu Lyu</a>, <a href="https://cfm.uestc.edu.cn/~shenht/">Heng Tao Shen</a>, 
+<a href="https://github.com/zchoi">Haonan Zhang</a>, <a href="https://ppengzeng.github.io/">Pengpeng Zeng</a>, <a href="https://lianligao.github.io/">Lianli Gao</a>, <a href="https://cfm.uestc.edu.cn/~songjingkuan/">Jingkuan Song</a>, Yihang Duan, <a href="https://xinyulyu.github.io/">Xinyu Lyu</a>, <a href="https://cfm.uestc.edu.cn/~shenht/">Heng Tao Shen</a>, 
 </h4>
 
 [Paper] | **IJCAI 2024** 
