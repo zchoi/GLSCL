@@ -34,6 +34,9 @@ Overview of the proposed GLSCL for text-video retrieval. It comprises two main c
 <img src="./imgs/exp1.jpg" width="100%" height="100%" class="center">
 </p>
 
+<p align="center">
+<img src="./imgs/exp2.jpg" width="100%" height="100%" class="center">
+</p>
 
 ## 📚 Citation
 
