@@ -78,14 +78,45 @@ main_retrieval.py \
 --loss2_weight 0.5 \
 ```
 ### How to Evaluate (take *MSR-VTT* for example)
+
+For simple testing on MSR-VTT-9k with default hyperparameters:
 ```
-python test.py
-  --exp_name={exp_name} \
-  --videos_dir={videos_dir} \
-  --batch_size=32 \
-  --load_epoch=-1 \
-  --dataset_name=MSRVTT \
-  --msrvtt_train_file=9k
+bash train_msrvtt.sh
+```
+or 
+```
+CUDA_VISIBLE_DEVICES=8,9 \
+python -m torch.distributed.launch \
+--master_port 2503 \
+--nproc_per_node=2 \
+main_retrieval.py \
+--do_eval 1 \
+--workers 8 \
+--n_display 50 \
+--epochs 5 \
+--lr 1e-4 \
+--coef_lr 1e-3 \
+--batch_size 64 \
+--batch_size_val 64 \
+--anno_path /mnt/nfs/CMG/zhanghaonan/datasets/MSR-VTT/anns \
+--video_path /mnt/nfs/CMG/zhanghaonan/datasets/MSR-VTT/MSRVTT_Videos \
+--datatype msrvtt \
+--max_words 32 \
+--max_frames 12 \
+--video_framerate 1 \
+--output_dir ckpt/msrvtt/ablation/8query_intra_consistency_MSE_0.0001_inter_diversity_0.1margin_both_3cross_add_query_sim_query_shared_cross_att_shared_without_weight \
+--center 1 \
+--query_number 8 \
+--cross_att_layer 3 \
+--query_share 0 \
+--cross_att_share 1 \
+--add_query_score_for_eval 1 \
+--base_encoder ViT-B/32 \
+--temp 3 \
+--alpha 0.0001 \
+--beta 0.005 \
+--init_model ckpt/msrvtt/ablation/8query_intra_consistency_MSE_0.0001_inter_diversity_0.1margin_both_3cross_add_query_sim_query_shared_cross_att_shared_without_weight/pytorch_model.bin.step2850.4 \
+--loss2_weight 0.5 \
 ```
 
 
