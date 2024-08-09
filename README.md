@@ -7,7 +7,7 @@
 
 This is the official code implementation of the paper "Text-Video Retrieval with Global-Local Semantic Consistent Learning", the checkpoint and feature will be released soon.
 
-## 🔥Updates
+## 🔥 Updates
 
 - [ ] Release the pre-trained weight and datasets.
 - [x] Release the training and evaluation code.
@@ -22,15 +22,17 @@ Adapting large-scale image-text pre-training models, e.g., CLIP, to the video do
 
 
 
-## 🍀Method
+## 🍀 Method
 Overview of the proposed GLSCL for text-video retrieval. It comprises two main components: (1) Global Interaction Module (GIM) captures coarse-level semantic information among text and video data without involving trainable parameters, and (2) Local Interaction Module (LIM) achieves fine-grained alignment within a shared latent semantic space via several lightweight queries. Furthermore, we introduce an inter-consistency loss and an intra-diversity loss to guarantee consistency and diversity of the shared semantics across and within modalities, respectively.
 <p align="center">
     <img src=imgs/framework.png><br>
     <span><b>Figure 2. Overview of the proposed GLSCL for Text-Video retrieval.</b></span>
 </p>
 
-## 🧪Experiments
-TODO
+## 🧪 Experiments
+<p align="center">
+<img src="./imgs/exp1.jpg" width="100%" height="100%" class="center">
+</p>
 
 
 ## 📚 Citation
