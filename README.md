@@ -37,7 +37,7 @@ The GLSCL framework depends on the following main requirements:
 - tqdm
 
 ### Datasets
-We train our model on ```MSR-VTT-9k```, ```MSR-VTT-7k```, ```DiDeMo```, ```LSMDC```, and ```ActivityNet``` datasets respectively. Please refer to this [repo](https://github.com/layer6ai-labs/xpool) for data preparation.
+We train our model on ```MSR-VTT-9k```, ```MSVD```, ```DiDeMo```, ```LSMDC```, and ```ActivityNet``` datasets respectively. Please refer to this [repo](https://github.com/layer6ai-labs/xpool) for data preparation.
 
 
 
