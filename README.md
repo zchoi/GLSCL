@@ -21,13 +21,25 @@ Adapting large-scale image-text pre-training models, e.g., CLIP, to the video do
 </p>
 
 
-
 ## 🍀 Method
 Overview of the proposed GLSCL for text-video retrieval. It comprises two main components: (1) Global Interaction Module (GIM) captures coarse-level semantic information among text and video data without involving trainable parameters, and (2) Local Interaction Module (LIM) achieves fine-grained alignment within a shared latent semantic space via several lightweight queries. Furthermore, we introduce an inter-consistency loss and an intra-diversity loss to guarantee consistency and diversity of the shared semantics across and within modalities, respectively.
 <p align="center">
     <img src=imgs/framework.png><br>
     <span><b>Figure 2. Overview of the proposed GLSCL for Text-Video retrieval.</b></span>
 </p>
+
+## ⚙️ Usage
+### Requirements
+The GLSCL framework depends on the following main requirements:
+- torch==1.8.1+cu114
+- Transformers 4.6.1
+- OpenCV 4.5.3
+- tqdm
+
+### Datasets
+We train our model on ```MSR-VTT-9k```, ```MSR-VTT-7k```, ```DiDeMo```, ```LSMDC```, and ```ActivityNet``` datasets respectively. Please refer to this [repo](https://github.com/layer6ai-labs/xpool) for data preparation.
+
+```
 
 ## 🧪 Experiments
 <p align="center">
