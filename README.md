@@ -51,7 +51,6 @@ TODO
               Hengtao Sheng
             },
   title     = {Text-Video Retrieval with Global-Local Semantic Consistent Learning},
-  booktitle = {Arxiv},
   year      = {2024}
 }
 ```
