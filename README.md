@@ -1,16 +1,11 @@
-<div align="center">
-<h1>
-<b>
-Text-Video Retrieval with Global-Local Semantic Consistent Learning
-</b>
-</h1>
-<h4>
+
+# _GLSCL_: Text-Video Retrieval with Global-Local Semantic Consistent Learning
+
 <a href="https://zchoi.github.io/">Haonan Zhang</a>, <a href="https://ppengzeng.github.io/">Pengpeng Zeng</a>, <a href="https://lianligao.github.io/">Lianli Gao</a>, <a href="https://cfm.uestc.edu.cn/~songjingkuan/">Jingkuan Song</a>, Yihang Duan, <a href="https://xinyulyu.github.io/">Xinyu Lyu</a>, <a href="https://cfm.uestc.edu.cn/~shenht/">Heng Tao Shen</a>, 
-
 </h4>
-
 </div>
-This is the code implementation of the paper "Text-Video Retrieval with Global-Local Semantic Consistent Learning", the checkpoint and feature will be released soon.
+
+This is the official code implementation of the paper "Text-Video Retrieval with Global-Local Semantic Consistent Learning", the checkpoint and feature will be released soon.
 
 ## 🔥Updates
 
