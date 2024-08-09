@@ -59,17 +59,17 @@ main_retrieval.py \
 --coef_lr 1e-3 \
 --batch_size 128 \
 --batch_size_val 64 \
---anno_path /mnt/nfs/CMG/zhanghaonan/datasets/MSR-VTT/anns \
---video_path /mnt/nfs/CMG/zhanghaonan/datasets/MSR-VTT/MSRVTT_Videos \
+--anno_path ANNOTATION_PATH \
+--video_path YOUR_RAW_VIDEO_PATH \
 --datatype msrvtt \
 --max_words 32 \
 --max_frames 12 \
 --video_framerate 1 \
---output_dir ckpt/msrvtt/no_qbnorm/alpha0.0001_beta_0.02 \
+--output_dir YOUR_SAVE_PATH \
 --center 1 \
 --temp 3 \
 --alpha 0.0001 \
---beta 0.02 \
+--beta 0.005 \
 --query_number 8 \
 --base_encoder ViT-B/32 \
 --cross_att_layer 3 \
@@ -97,28 +97,25 @@ main_retrieval.py \
 --lr 1e-4 \
 --coef_lr 1e-3 \
 --batch_size 64 \
---batch_size_val 64 \
---anno_path /mnt/nfs/CMG/zhanghaonan/datasets/MSR-VTT/anns \
---video_path /mnt/nfs/CMG/zhanghaonan/datasets/MSR-VTT/MSRVTT_Videos \
+--anno_path ANNOTATION_PATH \
+--video_path YOUR_RAW_VIDEO_PATH \
 --datatype msrvtt \
 --max_words 32 \
 --max_frames 12 \
 --video_framerate 1 \
---output_dir ckpt/msrvtt/ablation/8query_intra_consistency_MSE_0.0001_inter_diversity_0.1margin_both_3cross_add_query_sim_query_shared_cross_att_shared_without_weight \
+--output_dir YOUR_SAVE_PATH \
 --center 1 \
---query_number 8 \
---cross_att_layer 3 \
---query_share 0 \
---cross_att_share 1 \
---add_query_score_for_eval 1 \
---base_encoder ViT-B/32 \
 --temp 3 \
 --alpha 0.0001 \
 --beta 0.005 \
---init_model ckpt/msrvtt/ablation/8query_intra_consistency_MSE_0.0001_inter_diversity_0.1margin_both_3cross_add_query_sim_query_shared_cross_att_shared_without_weight/pytorch_model.bin.step2850.4 \
+--query_number 8 \
+--base_encoder ViT-B/32 \
+--cross_att_layer 3 \
+--query_share 1 \
+--cross_att_share 1 \
 --loss2_weight 0.5 \
+--init_model YOUR_CKPT_FILE
 ```
-
 
 ## 🧪 Experiments
 <p align="center">
