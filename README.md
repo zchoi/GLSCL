@@ -22,7 +22,6 @@ Adapting large-scale image-text pre-training models, e.g., CLIP, to the video do
 
 
 ## 🍀 Method
-Overview of the proposed GLSCL for text-video retrieval. It comprises two main components: (1) Global Interaction Module (GIM) captures coarse-level semantic information among text and video data without involving trainable parameters, and (2) Local Interaction Module (LIM) achieves fine-grained alignment within a shared latent semantic space via several lightweight queries. Furthermore, we introduce an inter-consistency loss and an intra-diversity loss to guarantee consistency and diversity of the shared semantics across and within modalities, respectively.
 <p align="center">
     <img src=imgs/framework.png><br>
     <span><b>Figure 2. Overview of the proposed GLSCL for Text-Video retrieval.</b></span>
@@ -39,6 +38,33 @@ The GLSCL framework depends on the following main requirements:
 ### Datasets
 We train our model on ```MSR-VTT-9k```, ```MSVD```, ```DiDeMo```, ```LSMDC```, and ```ActivityNet``` datasets respectively. Please refer to this [repo](https://github.com/layer6ai-labs/xpool) for data preparation.
 
+### How to Run (take *MSR-VTT* for example)
+
+For simple training on MSR-VTT-9k with default hyperparameters:
+```
+bash run_msrvtt.sh
+```
+or run in the terminal directly:
+```
+python train.py \
+  --exp_name={exp_name} \
+  --videos_dir={videos_dir} \
+  --batch_size=32 \
+  --noclip_lr=3e-5 \
+  --transformer_dropout=0.3 \
+  --dataset_name=MSRVTT \
+  --msrvtt_train_file=9k
+```
+### How to Evaluate (take *MSR-VTT* for example)
+```
+python test.py
+  --exp_name={exp_name} \
+  --videos_dir={videos_dir} \
+  --batch_size=32 \
+  --load_epoch=-1 \
+  --dataset_name=MSRVTT \
+  --msrvtt_train_file=9k
+```
 
 
 ## 🧪 Experiments
