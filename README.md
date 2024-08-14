@@ -6,6 +6,7 @@
 </div>
 
 This is the official code implementation of the paper "Text-Video Retrieval with Global-Local Semantic Consistent Learning", the checkpoint and feature will be released soon.
+
 We are continuously refactoring our code, be patient and wait for the latest updates!
 
 ## 🔥 Updates
