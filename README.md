@@ -51,7 +51,7 @@ or run in the terminal directly:
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 python -m torch.distributed.launch \
 --master_port 2513 \
---nproc_per_node=4 \
+--nproc_per_node=8 \
 main_retrieval.py \
 --do_train 1 \
 --workers 8 \
