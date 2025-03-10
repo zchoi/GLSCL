@@ -132,14 +132,7 @@ main_retrieval.py \
 
 ```bibtex
 @inproceedings{GLSCL,
-  author    = {Haonan Zhang and
-              Pengpeng Zeng and
-              Lianli Gao and
-              Jingkuan Song and
-              Yihang Duan and
-              Xinyu Lyu and
-              Hengtao Sheng
-            },
+  author    = {Haonan Zhang, and Pengpeng Zeng, and Lianli Gao, and Jingkuan Song, and Yihang Duan, and Xinyu Lyu, and Hengtao Sheng},
   title     = {Text-Video Retrieval with Global-Local Semantic Consistent Learning},
   year      = {2024}
 }
